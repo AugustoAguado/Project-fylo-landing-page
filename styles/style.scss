@@ -1,0 +1,287 @@
+
+
+//Headings, Call-to-actions, Header Navigation
+$font-header: 'Raleway', sans-serif;
+
+//Body
+$font-body:'Open Sans', sans-serif;
+
+//palette
+
+//Primary
+$VeryDarkBlue: hsl(243, 87%, 12%);
+$DesaturatedBlue: hsl(238, 22%, 44%);
+
+//Accent
+
+$BrightBlue: hsl(224, 93%, 58%);
+$ModerateCyan: hsl(170, 45%, 43%);
+
+//Neutral
+
+$LightGrayishBlue: hsl(240, 75%, 98%);
+$LightGray: hsl(0, 0%, 75%);
+
+.body{
+    display: flex;
+    min-width: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-header;
+    font-weight: 400;
+    &__logo{
+        margin: 1.5rem 0 0 1.5rem;
+        width: 10rem;
+        height: 3rem;
+    }
+    &__nav{
+        display:inline-block;
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin:1rem 1rem 0 0;
+        align-items: center;
+        color: $VeryDarkBlue;
+    }
+}
+
+.main{
+    font-family: $font-body;
+    &__first{
+        &__img{
+            margin-top: 10rem;
+            width: 100%;
+        }
+        &__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: $VeryDarkBlue;
+        }
+        &__title{
+            font-size: 3rem;
+            line-height: 4rem;
+        }
+        &__p{
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            margin: 2rem 3rem;
+        }
+        &__input{
+            width: 26rem;
+            min-width: 22rem;
+            height: 3rem;
+            margin-top: 1rem;
+        }
+        &__button{
+            font-size: 1.5rem; 
+            padding: 1.2rem 9.6rem;
+            margin-top: 1.5rem;
+            font-weight: 400;
+            background-color: $BrightBlue;
+            color: $LightGrayishBlue;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            
+        }
+    }
+    &__second{
+        &__img{
+            width: 100%;
+            margin-top: 15rem;
+        }
+        &__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 10rem;
+        }
+        &__title{
+            font-size: 2rem;
+            margin-bottom: 3.5rem;
+        }
+        &__p{
+            font-size: 1.6rem;
+            margin: 0 2rem;
+            color: #646174;
+            font-weight: 400;
+            line-height: 2rem;
+        }
+        &__link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 4rem 0 3rem 0 ;
+            padding-bottom: 0.8rem;
+            border-bottom: 0.1rem solid $ModerateCyan;
+            &__text{
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: $ModerateCyan;
+            margin-right: 0.7rem;
+            }
+            &__img{
+                width: 1.8rem;
+            }   
+        }
+        &__card{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            width: 80%;
+            min-width: 28rem;
+            height: 21.5rem;
+            margin: 2rem auto 12rem auto;
+            box-shadow:0 0 3rem -0.5rem $LightGray;
+            border-radius: 0.5rem;
+            &__img{
+                margin:2rem 0 1rem 2rem;
+                width: 1.5rem;
+            }
+            &__p{
+                margin:0 1rem 1rem 2rem;
+                font-size: 1.3rem;
+                line-height: 2.4rem;
+            }
+            &__profile{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                margin:auto 1rem 2rem 2rem;
+            }
+            &__avatar{
+                width: 3.5rem;
+                height: 3.5rem;
+                border-radius: 2rem;
+            }
+            &__text{
+                margin-left: 1rem;
+                
+            }
+            &__name{
+                margin:0;
+                font-size: 1.3rem;
+                margin-bottom: 0.3rem;
+            }
+            &__job{
+                color: $DesaturatedBlue;
+            }
+        }
+    }
+}
+
+.footer{
+    &__first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 50%;
+        background-color: $DesaturatedBlue;
+        color: $LightGrayishBlue;
+        font-family: $font-body;
+        &__title{
+            margin-top: 6rem;
+            font-size: 2rem;
+        }
+        &__p{ 
+            margin: 0 5rem;
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            
+        }
+        &__input{
+            width: 25rem;
+            height: 3rem;
+            margin: 3rem 3rem 1rem 3rem;
+        }
+        &__button{
+            font-size: 1.3rem; 
+            padding: 1rem 6.9rem;
+            margin: 0 0 2rem 0;
+            background-color: $BrightBlue;
+            color: $LightGrayishBlue;
+            text-decoration: none;
+            border-radius: 0.3rem;
+        }
+    }
+
+    &__second{
+        height: 78rem;
+        background-color: $VeryDarkBlue;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: $font-body;
+        &__img{
+            width: 17rem;
+            margin: 5rem 5rem;
+        }
+        &__contact{
+           color: $LightGrayishBlue;
+           font-size: 1.8rem;
+           margin-left: 5rem;
+           margin-bottom: 2rem;
+           display: flex;
+           flex-direction: row;
+           &__icon{
+            width: 2.3rem;
+            margin-right: 2rem;
+            max-height: 2.3rem;
+           }
+          &__link{
+            color: $LightGrayishBlue;
+            text-decoration: none;
+          }
+        }
+        &__us{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5rem;
+            margin-left: 5rem;
+            font-size: 2rem;
+            &__title{
+                color: $LightGrayishBlue;
+                font-size: 2rem;
+            }
+            &__item{
+                color: $LightGrayishBlue;
+                text-decoration: none;
+                margin-bottom: 1.5rem;
+            }
+        }
+        &__social{
+            display: flex;
+            flex-direction:row;
+            margin: 5rem auto 2rem auto;
+
+            &__facebook{
+                width: 4rem;
+                height: 4rem;
+                background-image: url(../images/icon-facebook.svg);
+                background-repeat: no-repeat;
+            }
+            &__twitter{
+                width: 4rem;
+                height: 4rem;
+                background-image: url(../images/icon-twitter.svg);
+                background-repeat: no-repeat;
+                margin: 0 2.7rem;
+            }
+            &__instagram{
+                width: 4rem;
+                height: 4rem;
+                background-image: url(../images/icon-instagram.svg);
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

@@ -303,6 +303,7 @@
   .main__first__img {
     width: 50%;
     min-width: 10rem;
+    max-width: 70rem;
     height: 40rem;
     margin: 0;
   }

@@ -104,7 +104,7 @@ $LightGray: hsl(0, 0%, 75%);
     &__second{
         margin-top: 15rem;
         background: url(../images/bg-curve-mobile.svg) no-repeat top;
-        background-size: 800% 210%;
+        background-size: 400rem 200rem;
         height: 120rem;
         
         &__img{
@@ -129,6 +129,7 @@ $LightGray: hsl(0, 0%, 75%);
             color: #646174;
             font-weight: 400;
             line-height: 2rem;
+            max-height: 23rem;
         }
         &__link{
             display: flex;
@@ -157,7 +158,7 @@ $LightGray: hsl(0, 0%, 75%);
             margin: 2rem auto 10rem auto;
             box-shadow:0 0 3rem -0.5rem $LightGray;
             border-radius: 0.5rem;
-            &__img{
+             &__img{
                 margin:2rem 0 1rem 2rem;
                 width: 1.5rem;
             }
@@ -340,8 +341,10 @@ $LightGray: hsl(0, 0%, 75%);
             font-family: $font-header;
             
             &__img{
-                width: 70rem;
-                min-width: 40rem;
+                width: 50%;
+                min-width: 10rem;
+                height: 40rem;
+                margin:0;
             }
             &__container{
                 text-align: start;
@@ -351,7 +354,8 @@ $LightGray: hsl(0, 0%, 75%);
             }
             &__title{
                 font-size: 3.5rem;
-                width: 52rem;
+                width: 80%;
+                max-width: 52rem;
                 margin: 0;
                 font-weight: 700;
             }

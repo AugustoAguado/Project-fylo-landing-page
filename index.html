@@ -36,8 +36,10 @@
         <p class="main__first__p">Fylo stores your most important files in one secure location. 
           Access them wherever you need, share and collaborate with friends, 
           family, and co-workers.</p>
-        <input class="main__first__input" type="text">
-        <a class="main__first__button" href="">Get Started</a>
+        <div class="main__first__inputcontainer">
+          <input class="main__first__input" type="text" placeholder="Enter your email...">
+          <a class="main__first__button" href="">Get Started</a>
+        </div>
       </div>
     </section>
     <section class="main__second">
@@ -53,7 +55,6 @@
           <a class="main__second__link__text" href="">See how Fylo works</a>
           <img class="main__second__link__img" src="./images/icon-arrow.svg" alt="">
         </div>
-      </div>
       <div class="main__second__card">
         <img src="./images/icon-quotes.svg" alt="" class="main__second__card__img">
         <p class="main__second__card__p">Fylo has improved our team productivity by an order of magnitude. Since 
@@ -65,20 +66,25 @@
             <span class="main__second__card__job">Founder & CEO, Huddle</span>
           </div>
         </div>
+      </div>
     </div>
     </section>
   </main>
   
   <footer>
     <section class="footer__first">
-      <h5 class="footer__first__title">Get early access today</h5>
-      <p class="footer__first__p">It only takes a minute to sign up and our free starter tier is extremely generous. 
-      If you have any questions, our support team would be happy to help you.</p>
-      <input class="footer__first__input" type="text">
-      <a class="footer__first__button" href="">Get Started For Free</a>
+      <div class="footer__first__text">
+        <h5 class="footer__first__title">Get early access today</h5>
+        <p class="footer__first__p">It only takes a minute to sign up and our free starter tier is extremely generous. 
+        If you have any questions, our support team would be happy to help you.</p>
+      </div>
+      <div class="footer__first__inputcontainer">
+        <input class="footer__first__input" type="text" placeholder="email@example.com">
+        <a class="footer__first__button" href="">Get Started For Free</a>
+      </div>
     </section>
     <section class="footer__second">
-      
+      <div class="footer__second__container">
       <img class="footer__second__img" src="./images/logo2.svg" alt="">
       <div class="footer__second__contact">
         <img class="footer__second__contact__icon" src="./images/icon-phone.svg" alt="">
@@ -87,6 +93,7 @@
       <div class="footer__second__contact">
         <img class="footer__second__contact__icon" src="./images/icon-email.svg" alt="">
         <a class="footer__second__contact__link" href=""><span>example@fylo.com</span></a>
+      </div>
       </div>
       <div class="footer__second__us">
         <p class="footer__second__us__title">About Us</p>

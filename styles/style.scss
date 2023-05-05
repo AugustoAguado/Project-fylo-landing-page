@@ -56,6 +56,7 @@ $LightGray: hsl(0, 0%, 75%);
         &__img{
             margin-top: 10rem;
             width: 100%;
+            max-height: 50rem;
         }
         &__container{
             display: flex;
@@ -73,11 +74,19 @@ $LightGray: hsl(0, 0%, 75%);
             line-height: 2.5rem;
             margin: 2rem 3rem;
         }
+        &__inputcontainer{
+            display: flex;
+            flex-direction: column;
+        }
         &__input{
-            width: 26rem;
+            width: 25rem;
             min-width: 22rem;
             height: 3rem;
             margin-top: 1rem;
+            &[type="text"]{
+                padding-left: 1rem;
+                font-size: 1.4rem;
+            }
         }
         &__button{
             font-size: 1.5rem; 
@@ -89,19 +98,26 @@ $LightGray: hsl(0, 0%, 75%);
             text-decoration: none;
             border-radius: 0.5rem;
             
+            
         }
     }
     &__second{
+        margin-top: 15rem;
+        background: url(../images/bg-curve-mobile.svg) no-repeat top;
+        background-size: 800% 210%;
+        height: 120rem;
+        
         &__img{
             width: 100%;
-            margin-top: 15rem;
+            margin-top: 15rem;   
+            max-height: 40rem; 
         }
         &__container{
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            margin-top: 10rem;
+            margin-top: 10rem;        
         }
         &__title{
             font-size: 2rem;
@@ -138,7 +154,7 @@ $LightGray: hsl(0, 0%, 75%);
             width: 80%;
             min-width: 28rem;
             height: 21.5rem;
-            margin: 2rem auto 12rem auto;
+            margin: 2rem auto 10rem auto;
             box-shadow:0 0 3rem -0.5rem $LightGray;
             border-radius: 0.5rem;
             &__img{
@@ -184,7 +200,6 @@ $LightGray: hsl(0, 0%, 75%);
         flex-direction: column;
         align-items: center;
         text-align: center;
-        height: 50%;
         background-color: $DesaturatedBlue;
         color: $LightGrayishBlue;
         font-family: $font-body;
@@ -198,15 +213,25 @@ $LightGray: hsl(0, 0%, 75%);
             line-height: 2.5rem;
             
         }
+        &__inputcontainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         &__input{
-            width: 25rem;
+            width: 24rem;
             height: 3rem;
             margin: 3rem 3rem 1rem 3rem;
+            &[type="text"]{
+                padding-left: 1rem;
+                font-size: 1.4rem;
+            }
         }
         &__button{
             font-size: 1.3rem; 
-            padding: 1rem 6.9rem;
-            margin: 0 0 2rem 0;
+            padding: 1rem;
+            width: 24rem;
+            margin: 0 0 3rem 0;
             background-color: $BrightBlue;
             color: $LightGrayishBlue;
             text-decoration: none;
@@ -281,6 +306,195 @@ $LightGray: hsl(0, 0%, 75%);
                 height: 4rem;
                 background-image: url(../images/icon-instagram.svg);
                 background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:950px) {
+      html{
+        font-size: 73%;
+    }
+    .header{
+        &__logo{
+            margin: 5rem 0 0 5rem;
+            width: 15rem;
+            height: 4.5rem;
+        }
+        &__nav{
+            font-size: 1.8rem;
+            text-decoration: none;
+            margin:2.5rem 4rem 0 0;
+            font-weight: 400;
+        }
+    }
+    .main{
+        &__first{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: flex-end;
+            height: 60rem;
+            margin:2rem 0 0 0;
+            font-family: $font-header;
+            
+            &__img{
+                width: 70rem;
+                min-width: 40rem;
+            }
+            &__container{
+                text-align: start;
+                width: 76rem;
+                align-items: normal;
+                margin-left: 6rem;
+            }
+            &__title{
+                font-size: 3.5rem;
+                width: 52rem;
+                margin: 0;
+                font-weight: 700;
+            }
+            &__p{
+                margin: 2rem 0;
+                width: 47rem;
+            }
+            &__inputcontainer{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            &__button{
+                padding: 0.9rem 3.7rem;
+                margin: 0;
+                border-radius: 0.2rem;
+            }
+            &__input{
+                margin: 0 1rem 0 0rem;
+              
+              
+            }
+        }
+        &__second{
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 14rem;
+            background: url(../images/bg-curve-desktop.svg) no-repeat top;
+            background-size: 800% 210%;
+            height: 80rem;
+            justify-content: start;
+            align-items: center;
+            font-family: $font-header;
+            &__container{
+                display: flex;
+                flex-direction: column;
+                text-align: start;
+                align-items: baseline;
+                margin-left: 6rem;
+                
+            }
+            &__title{
+                justify-self: start;
+                font-size: 3.5rem;
+            }
+            &__p{
+                margin: 0;
+                width: 50%;
+                color: $VeryDarkBlue;
+            }
+            &__img{
+                width: 70rem;
+                min-width: 40rem;
+                margin: 14rem 16rem 0 0;
+            }
+            &__card{
+                margin: 0;
+                width: 45%;
+                min-width: 35rem;
+            }
+        }
+        
+    }
+    .footer{
+        &__first{
+            display: flex;
+            flex-direction: row;
+            height: 27rem;
+            justify-content: space-between;
+            align-items: normal;
+            font-family: $font-header;
+            &__inputcontainer{
+                display:flex;
+                align-items: start;
+                margin-right:7rem ;
+                justify-content: center;
+            }
+            &__button{
+                width: 13rem;
+                margin: 0;
+                font-weight: 700;
+            }
+            &__input{
+                margin: 0 0 1rem 0;
+                width: 36rem;
+            }
+            &__text{
+                text-align: start;
+                width: 50rem;
+                margin-left: 5rem;
+            }
+            &__title{
+                font-size: 2.8rem;
+                margin-bottom: 3rem;
+            }
+            &__p{
+                margin: 0;
+            }
+        }
+        &__second{
+            height: 35rem;
+            // align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            display: flex;
+            
+            &__contact{
+                display: flex;
+                flex-direction: row;
+                margin: 0 0 2rem 5rem;
+            }
+            &__img{
+               margin:4rem 0 4rem 5rem;
+            }
+            &__us{
+                display: flex;
+                margin-top: 11rem;
+                &__item{
+                    margin-bottom: 2rem;
+                }
+                &__title{
+                    margin-bottom: 3rem;
+                }
+            }
+            &__social{
+                margin: 18rem 10rem;
+                
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:299px){
+    .header{
+        &__nav{
+            display: block;
+        }
+    }
+    .footer{
+        &__first{
+            &__inputcontainer{
+                width: 30%;
             }
         }
     }

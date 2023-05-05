@@ -11,7 +11,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 
 ### Screenshot
 
-![](./design/screanshotmobile.png)
+![](./design/screenshotmobile.png)
 ![](./design/screenshotdektop.png)
 
 ### Links
